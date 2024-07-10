@@ -10,7 +10,7 @@ const defaultdate = document.getElementById("defaultdate");
 const TEMPERATE = document.getElementById("TEMPERATE");
 
 async function getData(cityName){
-   const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=352b0a4dfc684a0ebdd204136240907&q=${cityName}&aqi=yes`);
+   const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=352b0a4dfc684a0ebdd204136240907&q=${cityName}&aqi=yes`);
    return await promise.json()
 }
 
